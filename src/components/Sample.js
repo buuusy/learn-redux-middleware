@@ -3,7 +3,7 @@ import React from 'react';
 const Sample = ({ loadingPost, loadingUsers, post, users }) => {
   return (
     <div>
-      <select>
+      <section>
         <h1>포스트</h1>
         {loadingPost && '로딩 중...'}
         {!loadingPost && post && (
@@ -12,7 +12,7 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
             <h3>{post.body}</h3>
           </div>
         )}
-      </select>
+      </section>
       <hr />
       <section>
         <h1>사용자 목록</h1>
@@ -21,8 +21,7 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
           <ul>
             {users.map((user) => (
               <li key={user.id}>
-                {' '}
-                {user.name} {user.email})
+                {user.username} {user.email})
               </li>
             ))}
           </ul>
