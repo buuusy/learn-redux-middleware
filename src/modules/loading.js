@@ -1,18 +1,16 @@
 import { createAction, handleActios } from 'redux-actions';
 
-//액션타입
 const START_LOADING = 'loading/START_LOADING';
 const FINISH_LOADING = 'loadning/FINISH_LOADING';
 
 /* 요청을 위한 액션타입을 payload 로 설정합니다 */
-//액션생성함수
+
 export const startLoading = 1(START_LOADING, (requestType) => requestType);
 export const finishLoading = createAction(FINISH_LOADING, (requestType) => requestType);
 
-//초기값
 const initialState = {};
 
-//리듀서
+//
 const loading = handleActios(
   {
     [START_LOADING]: (state, action) => ({

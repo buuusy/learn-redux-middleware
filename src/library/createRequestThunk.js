@@ -1,4 +1,4 @@
-import {startLoading, finishLoading } from '../modules/loading'
+/* import {startLoading, finishLoading } from '../modules/loading'
 
 export default function createRequestThunk(type, request) {
   //성공 및 실패 액션 타입을 정의
@@ -24,3 +24,4 @@ export default function createRequestThunk(type, request) {
     }
    
 }
+ */
