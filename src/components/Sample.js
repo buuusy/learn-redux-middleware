@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Sample = ({ loadingPost, loadingUsers, post, users }) => {
   return (
     <div>
@@ -16,12 +14,12 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
       <hr />
       <section>
         <h1>사용자 목록</h1>
-        {loadingUsers && '로딩중'}
+        {loadingUsers && '로딩중..'}
         {!loadingUsers && users && (
           <ul>
             {users.map((user) => (
               <li key={user.id}>
-                {user.username} {user.email})
+                {user.username} ({user.email})
               </li>
             ))}
           </ul>
